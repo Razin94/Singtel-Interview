@@ -25,7 +25,7 @@ class ParrotWithDog implements Parrot{
 	}
 
 	@Override
-	public String walk() {
+	public String move() {
 		String walk = "I am walking";
 		return walk;
 	}
@@ -64,7 +64,7 @@ class ParrotWithCat implements Parrot{
 	}
 
 	@Override
-	public String walk() {
+	public String move() {
 		String walk = "I am walking";
 		return walk;
 	}
@@ -103,7 +103,7 @@ class ParrotWithRooster implements Parrot{
 	}
 
 	@Override
-	public String walk() {
+	public String move() {
 		String walk = "I am walking";
 		return walk;
 	}
