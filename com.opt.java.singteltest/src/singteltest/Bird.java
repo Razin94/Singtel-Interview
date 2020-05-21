@@ -10,7 +10,7 @@ public interface Bird extends Animal {
 
 class Duck implements Bird {
 	@Override
-	public String walk() {
+	public String move() {
 		String walk = "I am walking";
 		return walk;
 	}
@@ -36,7 +36,7 @@ class Duck implements Bird {
 class Chicken implements Bird {
 
 	@Override
-	public String walk() {
+	public String move() {
 		System.out.println("I am walking");
 		return null;
 	}
@@ -60,7 +60,7 @@ class Rooster implements Bird {
 		//Creating the class on it's own is possible but it does not give a sense of the code not being done properly
 	
 	@Override
-	public String walk() {
+	public String move() {
 		System.out.println("I am walking");
 		return null;
 	}
