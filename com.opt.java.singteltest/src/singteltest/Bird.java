@@ -4,46 +4,53 @@ public interface Bird extends Animal {
 	public String Walk = "I am walking";
 	public String Fly = "I am flying";
 	public String sing = "I am Singing";
-	void fly(); 
-	void sing();
+	String fly(); 
+	String sing();
 }
 
 class Duck implements Bird {
 	@Override
-	public void walk() {
-		System.out.println("I am walking");
+	public String walk() {
+		String walk = "I am walking";
+		return walk;
 	}
 
 	@Override
-	public void fly() {
-		System.out.println("I am flying");
+	public String fly() {
+		String fly = "I am flying";
+		return fly;
 	}
 
 	@Override
-	public void sing() {
-		System.out.println("Quack Quack");
+	public String sing() {
+		String song = "Quack Quack";
+		return song;
 	}
 	
-	public void swim() {
-		System.out.println("I am swimming");
+	public String swim() {
+		String swim = "I am swimming";
+		return swim;
 	}
 }
 
 class Chicken implements Bird {
 
 	@Override
-	public void walk() {
+	public String walk() {
 		System.out.println("I am walking");
+		return null;
 	}
 
 	@Override
-	public void fly() {
+	public String fly() {
 		System.out.println("I cannot fly");
+		return null;
 	}
 
 	@Override
-	public void sing() {
+	public String sing() {
 		System.out.println("Cluck Cluck");
+		return null;
 	}
 	
 }
@@ -53,17 +60,20 @@ class Rooster implements Bird {
 		//Creating the class on it's own is possible but it does not give a sense of the code not being done properly
 	
 	@Override
-	public void walk() {
+	public String walk() {
 		System.out.println("I am walking");
+		return null;
 	}
 
 	@Override
-	public void fly() {
+	public String fly() {
 		System.out.println(" I cannot fly");
+		return null;
 	}
 
 	@Override
-	public void sing() {
+	public String sing() {
 		System.out.println("Cock-a-doodle-doo");
+		return null;
 	}
 }
